@@ -25,5 +25,12 @@
   <%= @position.description %>
 </p>
 
+<h2>Reviews</h2>
+<%= render @position.reviews %>
+
+
+<h2>Add a review:</h2>
+<%= render 'reviews/form' %>
+
 <%= link_to 'Edit', edit_position_path(@position) %> |
 <%= link_to 'Back', positions_path %>
